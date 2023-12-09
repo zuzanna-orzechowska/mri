@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ankieta dotycząca jeży</title>
+</head>
+<body style="background-color: #ffebf6;">
+    <form action="mailto:21284@student.ans-elblag.pl" enctype="text/plain">
+        <fieldset>
+            <legend>Zapoznanie</legend>
+            <p>Jak w skali 1-10 oceniasz swoją wiedzę na temat jeży:</p>
+            <label for="firstOp">
+                <input type="radio" name="skala" value="1-2" id="firstOp"> 1-2 / Średnio na jeża, mało wiedzy. <br>
+            </label>
+            <label for="secondOp">
+                <input type="radio" name="skala" value="3-4" id="secondOp"> 3-4 / Myślę, że coś tam wiem. <br>
+            </label>
+            <label for="thirdOp">
+                <input type="radio" name="skala" value="5-6" id="thirdOp"> 5-6 / Całkiem sporo wiem o jeżach <br>
+            </label>
+            <label for="fourthOp">
+                <input type="radio" name="skala" value="7-9" id="fourthOp" > 7-9 / Wiem prawie wszystko! <br>
+            </label>
+            <label for="fifthOp">
+                <input type="radio" name="skala" value="10" id="fifthOp"> 10 / Kocham jeże i wiem o nich wszystko!
+            </label>
+
+            <p>W jakich miejscach widziałeś/aś jeże:</p>
+            <label for="firstPl">
+                <input type="checkbox" name="place" value="ogrod" id="firstPl"> W ogrodzie <br>
+            </label>
+            <label for="secondPl">
+                <input type="checkbox" name="place" value="park" id="secondPl"> W parku <br>
+            </label>
+            <label for="thirdPl">
+                <input type="checkbox" name="place" value="ulica" id="thirdPl"> Na ulicy <br>
+            </label>
+            <label for="fourthPl">
+                <input type="checkbox" name="place" value="nigdzie" id="fourthPl"> Nigdy nie widziałem/am <br>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Krótki quiz</legend>
+            <p>Jaki tryb życia prowadzą jeże:</p>
+            <label for="lifestyle">
+                <select name="lifestyle" id="lifestyle">
+                    <option value="wybierz" disabled selected>Wybierz opcje</option>
+                    <option value="nocny">Nocny</option>
+                    <option value="dzienny">Dzienny</option>
+                    <option value="nocnyIdzienny">Funkcjonują dniem i nocą</option>
+                </select>
+            </label>
+            <p>Ile gatunków jeży występuje w Polsce:</p>
+            <label for="number">
+                <input type="number" name="number" min="1" max="5" id="number" >
+            </label>
+            <p>Jaki kolor dominuje w umaszczeniu jeża:</p>
+            <label for="color">
+                <input name="kolor" type="color" id="color" name="color" >
+            </label>
+            <p>Dlaczego jeż ma kolce:</p>
+            <label for="answer">
+                <input type="text" id="answer" name="answer" placeholder="Dlatego że..." size="30">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Coś od siebie</legend>
+            <p>Czy jeże są dla ciebie słodkimi stworzeniami? Odpowiedź uzasadnij</p>
+            <label for="opinion">
+                <textarea name="opinia" id="opinion" rows="6" cols="18" required placeholder="Jeże są słodkie ponieważ..."></textarea>
+            </label>
+            <p>Przejrzyj neta i pokaż zdjęcie jeże, które najbardziej ci sie podoba:</p>
+            <label for="photo">
+                <input type="file" name="photo" id="photo" >
+            </label>
+        </fieldset>
+        <label for="sumbit">
+            <input type="submit" value="Prześlij" id="submit">
+        </label>
+        <label for="reset">
+            <input type="reset" value="Wyczyść" id="reset">
+        </label>
+    </form>
+</body>
+</html>
